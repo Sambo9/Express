@@ -6,7 +6,7 @@
 
 <body>
 <p>
-    Greetings, student number <% if (id) { %><h2><%= id %></h2><% } %> <% if (name) { %><h2> name <%= name %></h2><% } %>
+    Greetings, <% if (name) { %><%= name +', '%><% } %> student number <% if (id) { %><%= id %><% } %> 
 </p>
 </body>
 

@@ -5,9 +5,9 @@ var path    = require("path");
 
 
 router.get("/student/:id", function(req, res, next) {
-    fs.readFile('public/student.html', function (err, data) {
+    fs.readFile('public/student.ejs', function (err, data) {
     if (err) throw err;
-    
+
     if(/^[0-9]*$/.test(req.params.id))
     {
         var str = data.toString();

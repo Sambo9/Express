@@ -33,7 +33,7 @@ app.use('/index', routes);
 app.use('/form', form);
 app.use('/image', image);
 
-app.get('/student/:id/:name', student);
+app.get('/student/:id', student);
 
 
 // catch 404 and forward to error handler
