@@ -29,8 +29,8 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/index', routes);
 
-app.get('/form', form);
-app.get('/image', image);
+app.use('/form', form);
+app.use('/image', image);
 
 app.get('/student/:id', student);
 

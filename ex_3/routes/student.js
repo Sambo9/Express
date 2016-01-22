@@ -7,7 +7,7 @@ var path    = require("path");
 router.get("/student/:id", function(req, res, next) {
     fs.readFile('public/student.html', function (err, data) {
     if (err) throw err;
-    console.log(typeof(req.params.id));
+    
     if(/^[0-9]*$/.test(req.params.id))
     {
         var str = data.toString();
@@ -21,7 +21,6 @@ router.get("/student/:id", function(req, res, next) {
         err.status = 404;
         next(err);
     }
-
   });
 });
 
